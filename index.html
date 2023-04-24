@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Encriptador de texto</title>
+      </head>
+            
+            <body>
+              
+              <header>
+                <img src="img/Vector.png" alt="LogoAlura">
+                <div class="titulo">
+                  <h1>Encriptador de Texto Alura - Challenge 1 - Oracle One - Grupo 4</h1>
+                </div>
+             </header>
+                  
+                  <main>
+                    
+                    <section class="seccion_1">
+                      <textarea class="texto" name="Texto" id="textoEncriptado" placeholder="Ingrese el texto aqui"></textarea>
+                      <div class="botones">
+                        <button class="botonEncriptado" type="button" id="botonEncriptado">Encriptar</button>
+                        <button class="botonDesencriptado" type="button" id="botonDesencriptado">Desencriptar</button>
+                      </div>
+                      
+                      <div class="informacion">
+                        <h1 class="mensajeInformacion">Solo letras minúsculas y sin acentos</h1>
+                      </div>                   
+                    
+                    </section>
+
+                    <section class="seccion_2">
+                        <textarea class="resultado" name="resultado" id="textoDesencriptado"></textarea>
+                        <div class="botones2">
+                          <button class="botonCopiar" type="button" id="botonCopiar">Copiar</button>
+                        </div>
+                        
+                    </section>
+                    
+                  </main>
+
+                  <footer>
+                    Por Alexander Fernández
+                  </footer>
+            
+             </body>
+
+    <script>
+
+      var btn=document.querySelector("#botonEncriptado");
+      btn.onclick=encriptar;
+
+      var btn2=document.querySelector("#botonDesencriptado");
+      btn2.onclick=desencriptar;
+
+      var btn3=document.querySelector("#botonCopiar");
+      btn3.onclick=copiar;
+
+    </script>
+
+</html>
